@@ -18,33 +18,28 @@
         </nav>
     </header>
     <main>
-        <h1>Entre em contato</h1>
+        <h1>Cadastre-se</h1>
         <form method="POST"
-              enctype="multipart/form-data">
+              enctype="multipart/form-data"
+              >
             <div>
-                <label for="campo-nome"> Nome Completo:</label> 
-                <input id="campo-nome" name="nome" type="text" />
+                <label for="campo-nome"> Nome Completo:</label>
+                <input id="campo-nome" name="nome" type="text" required />
             </div>
             <div>
                 <label for="campo-email"> E-mail:</label>
-                <input id="campo-email" name="email" type ="email" />
+                <input id="campo-email" name="email" type ="email" required />
             </div>
             <div>
-                <label for="campo-assunto">Assunto</label>:
-                <select name="assunto" id="campo-assunto">
-                    <option>Orçamentos</option>
-                    <option>Sugestão</option>
-                    <option>Depoimentos</option>
-                </select>
+                <label for="campo-senha"> Senha:</label>
+                <input id="campo-senha" name="senha" type="password" required minlength="8" />
             </div>
             <div>
-                <label for="campo-mensagem">Mensagem</label>:
-                <textarea name="mensagem" id="corpo-mensagem"></textarea>
+                <label for="campo-celular"> Celular:</label>
+                <input id="campo-celular" name="celular" type="number" required /> 
             </div>
             <div>
-                <button type="submit" >Enviar Contato</button>
-                <button type="resert" >Limpar Formulario</button>
-
+                <button type="submit" >Criar Conta</button>
             </div>
         </form>
     </main>
