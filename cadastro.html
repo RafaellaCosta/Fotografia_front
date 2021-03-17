@@ -2,68 +2,78 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <title> Digaxiiix Fotografia| Cadastro</title>
     <link rel="stylesheet" href="css/site.css" />
-    <title> Digaxiiix Fotografia| Contato</title>
+    <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="cabecalho">
+        <nav class="navegacao">
             <a href="home.html">
-                <img alt="logo Digaxiiix" src="imagens/logo.png" height="100" width="100" />
+                <img alt="logo Digaxiiix" class="logo" src="imagens/logo.png" />
             </a>
-            <a href="home.html">Home</a> 
-            <a href="portifolio.html">Portifolio</a>
-            <a href="contato.html">Contato</a>
-            <a href="sobre.html">Sobre</a>
-            <a class="botao" href="area_do_cliente.html">Area do Cliente</a>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
-                </li>
-            </ul>
-        </nav>
+            <a class="item-menu" href="home.html">Home</a> 
+            <a class="item-menu" href="portifolio.html">Portifolio</a>
+            <a class="item-menu" href="contato.html">Contato</a>
+            <a class="item-menu" href="sobre.html">Sobre</a>
+            <a class="botao acesso" href="area_do_cliente.html">Área do cliente</a>
+            <a class="menu-icone" href="#"></a>
+            </nav>
     </header>
     <main>
         <h1>Cadastre-se</h1>
         <form method="POST"
               enctype="multipart/form-data"
               >
+            <ul class="erros"></ul>
             <div>
                 <label for="campo-nome"> Nome Completo:</label>
-                <input id="campo-nome" name="nome" type="text" required />
+                <input id="campo-nome" 
+                       name="nome" 
+                       type="text" 
+                       required />
             </div>
             <div>
                 <label for="campo-email"> E-mail:</label>
-                <input id="campo-email" name="email" type ="email" required />
+                <input id="campo-email" 
+                       name="email" 
+                       type ="email" 
+                       required />
             </div>
             <div>
                 <label for="campo-senha"> Senha:</label>
-                <input id="campo-senha" name="senha" type="password" required minlength="8" />
+                <input id="campo-senha" 
+                       name="senha" 
+                       type="password" 
+                       required 
+                       minlength="8" />
             </div>
             <div>
                 <label for="campo-celular"> Celular:</label>
-                <input id="campo-celular" name="celular" type="number" required /> 
+                <input id="campo-celular" 
+                       pattern="^\d{2}-\d{5}-\d{4}$"
+                       name="celular" 
+                       type="tel" 
+                       required 
+                       /> 
             </div>
-            <div>
-                <button class="botao" type="submit" >Criar Conta</button>
+            <div class="acoes">
+                <button class="botao enviar" type="submit" >Criar Conta</button>
             </div>
         </form>
     </main>
     <footer>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
-            </li>
-        </ul>
-        <p>2021 Digaxiiix Fotografia 11 95874-0247 Todos os direitos reservados.</p>
+        <div class="rodape">
+            <ul class="media-list" >
+                <li>
+                    <a class="media-link facebook" href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <a class="media-link instagram" href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
+                </li>
+            </ul> 
+            <p>2021 Digaxiiix Fotografia 11 95874-0247 - Todos os direitos reservados.</p>  
+        </div> 
     </footer>
 </body>
 </html>

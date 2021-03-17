@@ -1,0 +1,49 @@
+.ensaios {
+    border-bottom: 1px solid var(--cor-cinza-escuro);
+    position:relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.ensaio {
+    background-color: var(--cor-cinza);
+    display: inline-block;
+    border-radius: 10px;
+    color: var(--cor-roxo-escuro);
+    margin: 8px 8px;
+    padding: 15px 10px;
+    text-align: center;
+    width: 250px;
+}
+
+.ensaio img {
+    width: 150px;
+    height: 150px;
+}
+
+.ensaio h4 {
+    
+    text-align: center;
+}
+
+.ensaio h2, .ensaio h3 {
+    margin: 0;
+}
+
+.depoimento {
+    display: inline-block;
+    border-radius: 10px;
+    color: var(--cor-roxo-escuro);
+    margin: 8px 0;
+    padding: 10px 10px;
+    text-align:center;
+    width: 300px;
+}
+
+.depoimento img{
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+}

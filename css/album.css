@@ -1,0 +1,24 @@
+
+.banner {
+    height: 100%;
+    width: 100%;
+}
+
+.album {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+}
+h1 {
+    
+    text-align: center;
+}
+
+.album img{
+    margin: 8px 8px;
+    padding: 15px 10px;
+    width: auto;
+    max-height: 300px;
+
+}

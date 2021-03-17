@@ -2,73 +2,85 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/site.css" />
     <title> Digaxiiix Fotografia| Contato</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="cabecalho">
+        <nav class="navegacao">
             <a href="home.html">
-                <img alt="logo Digaxiiix" src="imagens/logo.png" height="100" width="100" />
+                <img alt="logo Digaxiiix" class="logo" src="imagens/logo.png" />
             </a>
-            <a href="home.html">Home</a> 
-            <a href="portifolio.html">Portifolio</a>
-            <a href="contato.html">Contato</a>
-            <a href="sobre.html">Sobre</a>
-            <a class="botao" href="area_do_cliente.html">Area do Cliente</a>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
-                </li>
-            </ul>
-        </nav>
+            <a class="item-menu" href="home.html">Home</a> 
+            <a class="item-menu" href="portifolio.html">Portifolio</a>
+            <a class="item-menu" href="contato.html">Contato</a>
+            <a class="item-menu" href="sobre.html">Sobre</a>
+            <a class="botao acesso" href="area_do_cliente.html">Área do cliente</a>
+            <a class="menu-icone" href="#"></a>
+            </nav>
     </header>
     <main>
         <h1>Entre em contato</h1>
         <form method="POST"
               enctype="multipart/form-data">
+            <ul class="erros"></ul>
             <div>
                 <label for="campo-nome"> Nome Completo:</label> 
-                <input id="campo-nome" name="nome" type="text" />
+                <input id="campo-nome" 
+                       name="nome" 
+                       type="text"
+                       required
+                       maxlength="30"
+                       autofocus />
             </div>
             <div>
                 <label for="campo-email"> E-mail:</label>
-                <input id="campo-email" name="email" type ="email" />
+                <input id="campo-email" 
+                       name="email" 
+                       type ="email" 
+                       required/>
             </div>
             <div>
                 <label for="campo-assunto">Assunto</label>:
-                <select name="assunto" id="campo-assunto">
-                    <option>Orçamentos</option>
-                    <option>Sugestão</option>
-                    <option>Depoimentos</option>
+                <select name="assunto" 
+                        id="campo-assunto"
+                        required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="O">Orçamento</option>
+                    <option value="D">Depoimentos</option>
+                    <option value="S">Sugestão</option>
                 </select>
             </div>
             <div>
                 <label for="campo-mensagem">Mensagem</label>:
-                <textarea name="mensagem" id="corpo-mensagem"></textarea>
+                <textarea name="mensagem" 
+                          id="corpo-mensagem"
+                          required
+                          maxlength="140"></textarea>
             </div>
-            <div class="botao">
-                <button  type="submit" >Enviar Contato</button>
-                <button  type="resert" >Limpar Formulario</button>
-
+            <div class="acoes">
+                <button  type="submit" class="botao enviar">
+                    Enviar Contato
+                </button>
+                <button  type="resert" class="botao limpar">
+                    Limpar Formulario
+                </button>
             </div>
         </form>
     </main>
     <footer>
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
-            </li>
-        </ul>
-        <p>2021 Digaxiiix Fotografia 11 95874-0247 Todos os direitos reservados.</p>
+        <div class="rodape">
+            <ul class="media-list" >
+                <li>
+                    <a class="media-link facebook" href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <a class="media-link instagram" href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
+                </li>
+            </ul> 
+            <p>2021 Digaxiiix Fotografia 11 95874-0247 - Todos os direitos reservados.</p>  
+        </div> 
     </footer>
 </body>
 </html>

@@ -2,54 +2,71 @@
 <html>
 <head>
     <meta charset="UTF-8" />
+    <title> Digaxiiix Fotografia | Area do Cliente</title>
     <link rel="stylesheet" href="css/site.css" />
-    <title> Digaxiiix Fotografia| Contato</title>
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/forms.css" />
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="cabecalho">
+        <nav class="navegacao">
             <a href="home.html">
-                <img alt="logo Digaxiiix" src="imagens/logo.png" height="100" width="100" />
+                <img alt="logo Digaxiiix" class="logo" src="imagens/logo.png" />
             </a>
-            <a href="home.html">Home</a> 
-            <a href="portifolio.html">Portifolio</a>
-            <a href="contato.html">Contato</a>
-            <a href="sobre.html">Sobre</a>
-            <a class="botao" href="area_do_cliente.html">Area do Cliente</a>
-        </nav>
-        <nav>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
-                </li>
-            </ul>
-        </nav>
+            <a class="item-menu" href="home.html">Home</a> 
+            <a class="item-menu" href="portifolio.html">Portifolio</a>
+            <a class="item-menu" href="contato.html">Contato</a>
+            <a class="item-menu" href="sobre.html">Sobre</a>
+            <a class="botao acesso" href="area_do_cliente.html">Área do cliente</a>
+            <a class="menu-icone" href="#"></a>
+            </nav>
     </header>
     <main>
         <h1>Área do Cliente</h1>
         <form method="POST"
-              enctype="multipart/form-data"
-              action="/salvarForm">
+              novalidate
+              enctype="multipart/form-data">
+            <ul class="erros"></ul>
             <div>
                 <label for="campo-email">E-mail</label> 
-                <input id="campo-email" name="email" type="email" />
+                <input id="campo-email" 
+                       name="email" 
+                       type="email" 
+                       required/>
             </div>
             <div>
                 <label for="campo-senha">Senha</label>
-                <input id="campo-senha" name="senha" type ="text" />
+                <input id="campo-senha" 
+                       name="senha" 
+                       type ="password"
+                       required />
             </div>
             <div>
-                <button class="botao" type="submit" >Esqueci minha senha</button>
-                <button class="botao" type="submit" >Acessar</button>
-                <button class="botao" type="button" >Cadastre-se</button>
+                <label for="campo-lembrar">Lembrar de mim</label>
+                <input id="campo-lembrar"
+                       type="checkbox" 
+                       name="lembrar" 
+                       value="SIM" />
+            </div>
+            <div class="acoes">
+                <button class="botao enviar" type="submit" >Esqueci minha senha</button>
+                <button class="botao enviar" type="submit" >Acessar</button>
+                <button class="botao enviar" type="button" >Cadastre-se</button>
             </div>
         </form>
     </main>
     <footer>
-        <p>2021 Digaxiiix Fotografia 11 95874-0247 Todos os direitos reservados.</p>
+        <div class="rodape">
+            <ul class="media-list" >
+                <li>
+                    <a class="media-link facebook" href="https://www.facebook.com/digaxiiix/" target="blank">Facebook</a>
+                </li>
+                <li>
+                    <a class="media-link instagram" href="https://www.instagram.com/digaxiiix/" target="blank">Instagram</a>
+                </li>
+            </ul> 
+            <p>2021 Digaxiiix Fotografia 11 95874-0247 - Todos os direitos reservados.</p>  
+        </div> 
     </footer>
 </body>
 </html>
