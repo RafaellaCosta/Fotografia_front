@@ -1,10 +1,13 @@
 input, select, textarea {
     border-radius: 4px;
     border: 1px solid var(--cor-roxo-medio);
-    display: inline-block;
-    margin: 8px 0;
-    padding: 12px 12px;
-    width: 95%;
+    padding: 10px 10px;
+    width: 40%;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 8px 5px;
+    
 }
 
 form.validado input:invalid,
@@ -23,6 +26,7 @@ ul.erros {
     margin: 0 auto;
     padding: 5px 8px;
     width: 350px;
+    
 }
 
 ul.erros.mostrar {
