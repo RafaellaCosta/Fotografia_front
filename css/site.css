@@ -159,3 +159,7 @@ main {
     border: 1px solid var(--cor-roxo);
     color: var(--cor-roxo-escuro);
 }
+
+.favicon {
+    border-radius: 100px;
+}
